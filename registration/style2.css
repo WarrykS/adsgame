@@ -1,0 +1,39 @@
+#launcher{
+    width: 800px;
+    height: 451px;
+    background-color: black;
+    color: aliceblue;
+    border: 0ch;
+    margin-left: 24%;
+    position: absolute; 
+    margin-bottom: 200px;
+    border-radius: 7px;
+
+}
+
+#test {
+    
+    margin-left: 24%;
+    position: absolute;
+    margin-bottom: 200px;
+    border-radius: 7px;
+
+}
+
+#table {
+background: rgb(254,254,226);
+background: linear-gradient(90deg, rgba(254,254,226,1) 0%, rgba(255,251,204,1) 100%);
+    font-weight: bold;
+    font-size: 18.9px;
+    margin-left: 77.5%;
+    margin-bottom: 100%;
+    position: absolute;
+    border-style: ridge;
+    box-shadow: 50px;
+    
+}
+
+#thead {
+    font-size: 20px;
+    font-size: x-large;
+}

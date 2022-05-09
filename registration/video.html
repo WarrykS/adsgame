@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style2.css" rel="stylesheet">
+    <title>video</title>
+
+</head>
+<body>
+
+    <button id="launcher" type="submit"><img src="triangle.png" width="250px" height="200px"  onclick="video() ; sleep()" alt="Submit"></button>
+
+
+<script>
+
+var videos = ["./pub/pub1.mp4","./pub/pub2.mp4","./pub/pub3.mp4"];
+
+input = document.getElementById('launcher');
+
+function video() {
+
+    input.style.display = 'none';
+
+
+
+    var playerDiv = document.getElementById("test");
+    var player = document.createElement("IFRAME");
+    var randomVideo = videos[Math.floor(Math.random() * videos.length)];
+
+    player.classList.add("videoplayer")
+    player.setAttribute('width', '650');
+    player.setAttribute('height', '400');
+    player.setAttribute('src', randomVideo);
+
+    playerDiv.appendChild(player);
+
+
+
+};
+
+function sleep() {
+  timeoutID = window.setTimeout(reset, 11000);
+}
+
+function reset() {
+//   alert("TEST : La page reset");
+  location.reload();
+}
+
+</script>
+
+
+
+<div id="test"></div>
+
+
+
+</body>
+</html>
