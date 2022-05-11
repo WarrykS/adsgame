@@ -20,14 +20,20 @@
   <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.php"> <img src="adsgame copy.png" width="30" height="30" > </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-        <img src="profil.png"><a class="btn btn-primaryy" href="index.php" role="button">Mon compte</a>
+        <img src="../photo/profile.png" height="38px" width="38px">
+        <button type="button" class="btn btn-primaryy position-relative">       
+        Mon compte
+  <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+    <span class="visually-hidden">New alerts</span>
+  </span>
+</button>
+
         </li>
         </li>
         <li class="nav-item">
@@ -43,29 +49,17 @@
     <h3>Bienvenue chez <br> adsgame <br> <?php echo $_SESSION['username']; ?> !</h3>
     </div>
 
+    <div class="jeux">
+    <img src="../photo/civ6.jpg" class="jeu" width="100px" height="50px"> Acheter : 59.99€ </br>
+    <img src="../photo/cuphead.jpg" class="jeu" width="100px" height="50px"> Acheter : 59.99€ </br>
+    <img src="../photo/fifa.jpg" class="jeu" width="100px" height="50px"> Acheter : 59.99€ </br>
+    <img src="../photo/halo.jpg" class="jeu" width="100px" height="50px"> Acheter : 59.99€ </br>
+    <img src="../photo/b4b.jpg" class="jeu" width="100px" height="50px"> Acheter : 59.99€ </br>
+</div>
+
 
 
 <div class="div-link">
-         <a href="">
-         <img alt="civ6" src="../photo/civ6.jpg" class="image"
-         width="350" height="120"></a>
-
-
-         <a href="">
-         <img alt="civ6" src="../photo/b4b.jpg" class="image"
-         width="350" height="123"></a>
-
-         <a href="">
-         <img alt="civ6" src="../photo/fifa.jpg" class="image"
-         width="350" height="123"></a>
-
-         <a href="">
-         <img alt="civ6" src="../photo/halo.jpg" class="image"
-         width="350" height="122"></a>
-
-         <a href="">
-         <img alt="civ6" src="../photo/cuphead.jpg" class="image"
-         width="350" height="122"></a>
 
          <div id="test"></div>
           <button id="launcher" type="button"><img src="triangle.png" width="250px" height="200px" alt="Submit"></button>

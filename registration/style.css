@@ -128,14 +128,13 @@ body {
     background-color: #333;
     border: none;
     font-size: 18px;
-    width: 370px;
+    width: 150px;
     color: #FFFFFF;
 
   }
 
   .div-link {
     display: flex;
-    flex-direction: column;
     padding-right: 90%;
 
   }
@@ -194,3 +193,19 @@ img:hover {
     border-radius: 5px;
     
   }
+
+
+  .jeux {
+    margin-right: 80%;
+  }
+  .jeu {
+    border-radius: 10px;
+    margin-top: 8px;
+  }
+  
+  .div.jeux {
+    width: 25%;
+
+  }
+
+  
